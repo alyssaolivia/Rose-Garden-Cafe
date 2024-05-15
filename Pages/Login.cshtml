@@ -1,0 +1,68 @@
+﻿@page
+@model Rose_Garden_Cafe.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center fixed-top ">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+        <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+        <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+    </div>
+</section>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <div class="logo me-auto">
+            <h1><a asp-page="Index">Rose &amp; Garden</a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="hero">Home</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="about">About</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="menu">Menu</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="specials">Specials</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="events">Events</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="chefs">Chefs</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="gallery">Gallery</a></li>
+                <li><a class="nav-link scrollto" asp-page="Index" asp-fragment="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a>
+
+    </div>
+</header><!-- End Header -->
+<main id="main">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Login</h2>
+                <ol>
+                    <li><a asp-page="Index" as>Home</a></li>
+                    <li>Login</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </form>
+        </div>
+    </section>
+</main><!-- End #main -->
